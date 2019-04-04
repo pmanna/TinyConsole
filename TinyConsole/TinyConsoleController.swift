@@ -35,7 +35,7 @@ open class TinyConsoleController: UIViewController {
         if #available(iOS 9, *) {
             return self.consoleViewController.view.heightAnchor.constraint(equalToConstant: 0)
         } else {
-            return NSLayoutConstraint(item: self.consoleViewController.view, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 0)
+			return NSLayoutConstraint(item: self.consoleViewController.view!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 0)
         }
     }()
     
